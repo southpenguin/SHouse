@@ -8,7 +8,15 @@ The basic idea is, first trying to find out which product is discontinued and in
 
 Here is the code: [```Problem2```](https://github.com/southpenguin/SHouse/blob/master/Problem2/Problem2.sql)
 
-So basically we first use temp1 and temp2 as temp tables in the middle to form a table like this:
+So basically we first use temp1 and temp2 as temp tables in the middle to form a table to change the orignal table:
+
+| PRODUCT.PRODUCT_ID  | total | DISCONTINUE_DATE    | REPLACEMENT_PRODUCT_ID |
+| ------------------- | ----- | ------------------- | ---------------------- |
+|           2         |   50  | xxxx-xx-xx xx:xx:xx |            5           |
+|          15         |  530  | xxxx-xx-xx xx:xx:xx |           25           |
+|          10         |  300  | xxxx-xx-xx xx:xx:xx |           40           |
+
+change it to:
 
 | PRODUCT.PRODUCT_ID  | total | DISCONTINUE_DATE    | REPLACEMENT_PRODUCT_ID |
 | ------------------- | ----- | ------------------- | ---------------------- |
