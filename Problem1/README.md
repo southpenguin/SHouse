@@ -5,7 +5,7 @@ After seeing the problem, my first thought is try find simple linear rule like s
 However I found this is impractical since the picture or the logo is very irregular, there is no way I can use simple 
 way to find the rule.
 
-Then I thought about how the logo actually formed, its by drawing several curves to form the swoosh.
+Then I thought about how the logo actually formed - by drawing several curves to form the swoosh.
 There are several observations I found:
 * The height is half of the width.
 * Ignoring the bottom right blank, basically it is an ellipse.
@@ -21,7 +21,7 @@ So after several attempt trial, I formed the coordinate function to discribe the
 
 (and 2 parabola functions which are too complicated to write here)
 
-Also in my code I used a 2D array to store the charactor, which is not neccesary to use the space if just need to draw on console. 
+Also in my code I used a 2D array to store the charactors, which is not neccesary to use the space if just need to draw on console. 
 However since this is for potential use on the website to store everyone's information, I used the array to store the information.
 
 Here is my code [```Swoosh.java```](https://github.com/southpenguin/SHouse/blob/master/Problem1/Swoosh.java)
