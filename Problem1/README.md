@@ -1,21 +1,21 @@
 Problem1: Draw a swoosh
 ========
 
-After seeing the problem, my first thought is try find simple linear rule like symmetrical, etc. 
-However I found this is impractical since the picture or the logo is very irregular, there is no way I can use simple 
+After seeing the problem, my first thought was trying to find simple rules like symmetrical, linear relation etc. 
+However I found this is impractical since the picture or the logo is very irregular, there was no way I can use simple 
 way to find the rule.
 
 Then I thought about how the logo actually formed - by drawing several curves to form the swoosh.
-There are several observations I found:
+There were several observations I found:
 * The height is half of the width.
 * Ignoring the bottom right blank, basically it is an ellipse.
 * The bottom right can be treated as parabola curves to mimic.
 * By observing the pattern, the bottom right part has 2 different parabolas have the same left point, if using my parabola model.
 
 So the entire logo is within the oval area and left to the parabolas curves.
-Since using this way can simply test every pixcel if it is within the area, I decided to code this way.
+Since using this way I can simply test every pixcel if it is within the area, I decided to code this way.
 
-So after several attempt trial, I formed the coordinate function to discribe the curves of the picture.
+So after several attempt trials, I formed the coordinate functions to discribe the curves of the picture.
 
 (x - a)^2 / a^2  + (y - b)^2 / b^2 < 1  (in the code for potential overflow, I did the division first)
 
